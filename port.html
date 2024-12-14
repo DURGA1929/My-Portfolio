@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DURGA SENTHILKUMAR</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #e3f2fd, #fff);
+            color: #333;
+        }
+        header {
+            background-color: #a3cb14;
+            color: #fff;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        header img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+        nav {
+            background: #58cc05;
+            text-align: center;
+            padding: 15px 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 50px;
+            text-align: center;
+        }
+        h2 {
+            color: #6dd610;
+        }
+        .skills, .projects {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            padding: 20px;
+            text-align: center;
+        }
+        footer {
+            background: #7ec808;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        button {
+            background-color: #5ed613;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 20px;
+        }
+        button:hover {
+            background-color: #74dc0c;
+        }
+        .photo-section input {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DURGA SENTHILKUMAR</h1>
+        <p>Aspiring Engineer | Data Analyst | Innovator | Web Developer</p>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I’m Durga, an engineer with a passion for data analysis, Contributed to two data analysis projects, applying statistical techniques and data visualization to extract insights from complex datasets. Enhanced decision-making processes by identifying trends and patterns, improving proficiency in analytics tools and strengthening problem-solving skills.</p>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills">
+                <div class="card">
+                    <h3>Programming</h3>
+                    <p>Python, Java, C</p>
+                </div>
+                <div class="card">
+                    <h3>Data Analysis</h3>
+                    <p>PowerBI</p>
+                </div>
+                <div class="card">
+                    <h3>IoT Development</h3>
+                    <p>Arduino, Raspberry Pi</p>
+                </div>
+                <div class="card">
+                    <h3>Web Development</h3>
+                    <p>HTML,CSS</p>
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects">
+                <div class="card">
+                    <h3>College Projects</h3>
+                    <p>Emergency Patients Alaram</p>
+                    <p>Wearable Stress Detecting sensor </p>
+                </div>
+                <div class="card">
+                    <h3>Data Analysis Internship</h3>
+                    <p>Worked on two data analysis projects and presented insights.</p>
+                </div>
+                <div class="card">
+                    <h3>IoT Solutions</h3>
+                    <p>Completed an IoT certification course and built smart prototypes.</p>
+                </div>
+            </div>
+        </section>
+        <section id="achievements">
+            <h2>Achievements</h2>
+            <ul>
+                <li>3rd place in basketball at Anna University for two consecutive years.</li>
+                <li>Secured 3rd place in IEEE paper presentation.</li>
+                <li>Bronze medal in Artificial Intelligence.</li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: durga.ec22@krct.ac.in</p>
+            <p>LinkedIn:https://www.linkedin.com/in/durgasenthilkumar-s <a>href="#" target="_blank">View Profile</a></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Durga's Portfolio. All Rights Reserved.</p>
+    </footer>
+    <script>
+        function loadPhoto(event) {
+            const reader = new FileReader();
+            reader.onload = function () {
+                const profilePic = document.getElementById('profile-pic');
+                profilePic.src = reader.result; // Replace default photo with uploaded photo
+            }
+            reader.readAsDataURL(event.target.files[0]);
+        }
+    </script>
+</body>
+</html>
